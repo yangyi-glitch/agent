@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: spring-ai-deepseek-agent
+  ai:
+    openai:
+      api-key: sk-8365b36e7073421f8e109a724bf4a58d
+      base-url: https://api.deepseek.com
+      chat:
+        options:
+          model: deepseek-flash
+          temperature: 0.7
+      # ========== TokenHub kinfra embedding ==========
+      embedding:
+        api-key: sk-pshqkWnjeojDQV7v7yJdETQsnzMwf845uiAAaQcCl0VTVl7z
+        base-url: https://tokenhub.tencentmaas.com
+        options:
+          model: kinfra-text-embedding-0.6b
+app:
+  rag:
+    folder-path: D:/rag-files/
